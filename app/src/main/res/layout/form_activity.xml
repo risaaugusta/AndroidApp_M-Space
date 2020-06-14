@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg2">
+
+    <ImageView
+        android:layout_marginTop="-40px"
+        android:layout_width="450px"
+        android:layout_height="450px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sekolah"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_height="270dp"
+        android:layout_width="317dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="245dp"
+        app:cardElevation="40dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:layout_marginLeft="20px"
+                android:orientation="vertical">
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/user"/>
+                <ImageView
+                    android:layout_marginTop="55px"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:background="@drawable/date"/>
+                <ImageView
+                    android:layout_marginTop="70px"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/tujuan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:hint="Nama Peminjam"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="casual"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_tgl"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusable="true"
+                    android:fontFamily="casual"
+                    android:hint="yy/mm/dd" />
+                <EditText
+
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Tujuan"
+                    android:fontFamily="casual"
+                    />
+                <Button
+                    android:layout_gravity="right"
+                    android:layout_marginTop="12px"
+                    android:layout_width="220px"
+                    android:layout_height="55px"
+                    android:text="Propose"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
